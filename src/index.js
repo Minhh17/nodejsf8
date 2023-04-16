@@ -20,6 +20,11 @@ app.set('views', path.join(__dirname, 'resourse/views'));
 app.get('/', (req, res) => {
     return res.render('home');
 })
+
+app.get('/search', (req, res) => {
+    return res.render('search');
+})
+
 app.get('/about', (req, res) => {
     return res.render('about');
 })
